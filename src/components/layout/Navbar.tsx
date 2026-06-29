@@ -4,8 +4,8 @@ import { Button } from '../ui/button'
 const Navbar = () => {
   return (
     <>
-      <div className=" bg-blue-900 text-white h-12 ">
-      <div className="container mx-auto flex items-center justify-between h-full ">
+      <div className=" bg-blue-900 w-screen flex text-white h-12 ">
+      <div className="w-full flex justify-between items-center px-18">
         {/* telephone part  */}
         <div className='flex items-center gap-2'>
             <Phone size={18}/>
