@@ -1,11 +1,74 @@
-import React from 'react'
+
+"use client";
+
+import Image from "next/image";
+import Link from "next/link";
+
+const navLinks = [
+  {
+    name: "Home",
+    href: "/",
+  },
+  {
+    name: "About",
+    href: "/about",
+  },
+  {
+    name: "Courses",
+    href: "/courses",
+  },
+  {
+    name: "Gallery",
+    href: "/gallery",
+  },
+  {
+    name: "Contact",
+    href: "/contact",
+  },
+  {
+    name: "Internship",
+    href: "/internship",
+  },
+  {
+    name: "Download Form",
+    href: "/download-form",
+  },
+];
 
 const MainNavBar = () => {
   return (
-    <>
-    hello
-    </>
-  )
-}
+    <nav className="bg-white  shadow-sm border-b">
+      <div className="w-screen flex mx-auto px-15">
+        <div className="flex w-full items-center justify-between h-16">
+          {/* Logo */}
+          <Link href="/">
+            <Image
+              src="/logo/logo-DJ.png"
+              alt="College Logo"
+              width={150}
+              height={60}
+              priority
+              className="object-contain"
+            />
+          </Link>
 
-export default MainNavBar
+          {/* Navigation Links */}
+          <ul className="hidden lg:flex items-center gap-30 text-xl font-medium text-[#1100AB]">
+            {navLinks.map((link) => (
+              <li key={link.name}>
+                <Link
+                  href={link.href}
+                  className="transition-all duration-300 hover:text-black"
+                >
+                  {link.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </nav>
+  );
+};
+
+export default MainNavBar;
