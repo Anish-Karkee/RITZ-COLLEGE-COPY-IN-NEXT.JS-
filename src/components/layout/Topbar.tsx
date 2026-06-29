@@ -6,7 +6,7 @@ import { Button } from '../ui/button'
 const Topbar = () => {
   return (
     <>
-      <div className=" bg-blue-900 w-screen flex text-white h-12 ">
+      <div className=" bg-[#1100AB] w-screen flex text-white h-12 ">
       <div className="w-full flex justify-between items-center text-xl px-18">
         {/* telephone part  */}
         <div className='flex items-center gap-2'>
