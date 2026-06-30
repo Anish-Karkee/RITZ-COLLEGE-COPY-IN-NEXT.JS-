@@ -53,7 +53,7 @@ const MainNavBar = () => {
           </Link>
 
           {/* Navigation Links */}
-          <ul className="hidden lg:flex items-center gap-29.25 text-xl  text-[#1100AB] ml-32">
+          <ul className="hidden lg:flex items-center gap-28.75 text-xl  text-[#1100AB] ml-32">
             {navLinks.map((link) => (
               <li key={link.name}>
                 <Link
