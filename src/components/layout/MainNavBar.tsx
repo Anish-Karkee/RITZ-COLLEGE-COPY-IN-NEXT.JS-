@@ -3,7 +3,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-
+import LOGO from "../../../public/logo/logo-DJ.png"
 const navLinks = [
   {
     name: "Home",
@@ -38,12 +38,12 @@ const navLinks = [
 const MainNavBar = () => {
   return (
     <nav className="bg-white  shadow-sm border-b">
-      <div className="w-screen flex mx-auto px-15">
-        <div className="flex w-full items-center justify-between h-16">
+      <div className="w-full mx-auto px-15">
+        <div className="flex w-full items-center justify-between h-18">
           {/* Logo */}
           <Link href="/">
             <Image
-              src="/logo/logo-DJ.png"
+              src={LOGO}
               alt="College Logo"
               width={150}
               height={60}
@@ -53,7 +53,7 @@ const MainNavBar = () => {
           </Link>
 
           {/* Navigation Links */}
-          <ul className="hidden lg:flex items-center gap-29.25 text-xl  text-[#1100AB]">
+          <ul className="hidden lg:flex items-center gap-29.25 text-xl  text-[#1100AB] ml-32">
             {navLinks.map((link) => (
               <li key={link.name}>
                 <Link

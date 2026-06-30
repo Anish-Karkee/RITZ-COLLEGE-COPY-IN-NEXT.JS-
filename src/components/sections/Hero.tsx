@@ -5,8 +5,8 @@ const Hero = () => {
   return (
     <>
     <div>
-    <section className="w-full">
-    <div className="relative w-full h-[910px] overflow-hidden">
+    <section className="w-full ">
+    <div className="relative h-screen overflow-hidden">
             <Image 
             src={LAND1}
             alt="image1"
