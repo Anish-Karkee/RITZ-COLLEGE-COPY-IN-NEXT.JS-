@@ -15,13 +15,13 @@ const Topbar = () => {
         </div>
 
         {/*Mail part */}
-        <div className='flex items-center gap-2'>
+        <div className='flex items-center gap-2 cursor-pointer'>
             <Mail size={18}/>
             <span>ritzcollegeofhm@gmail.com</span>
         </div>
 
         {/*Right part */}
-        <Button className='bg-white border-white text-blue-900 px-4 py-1 text-xl rounded font-medium hover:bg-blue-800 hover:text-white'>
+        <Button className='bg-white border-white border-2 text-blue-900 px-4 py-1 text-xl rounded font-medium cursor-pointer hover:bg-blue-800 hover:text-white'>
             Apply Now
         </Button>
 
