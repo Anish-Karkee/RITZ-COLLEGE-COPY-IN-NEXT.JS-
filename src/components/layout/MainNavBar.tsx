@@ -53,12 +53,12 @@ const MainNavBar = () => {
           </Link>
 
           {/* Navigation Links */}
-          <ul className="hidden lg:flex items-center gap-28.75 text-xl  text-[#1100AB] ml-32">
+          <ul className="hidden lg:flex items-center gap-28.75 text-xl text-[#1100AB] ml-32">
             {navLinks.map((link) => (
               <li key={link.name}>
                 <Link
                   href={link.href}
-                  className="transition-all duration-300 hover:text-black"
+                  className="relative inline-block pb-1 transition-all duration-300 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:origin-left after:scale-x-0 after:bg-[#1100AB] after:transition-transform after:duration-300 hover:after:scale-x-100"
                 >
                   {link.name}
                 </Link>
