@@ -23,25 +23,25 @@ export default function Carousel() {
   }, []);
 
   return (
-    <div className="relative w-full h-[855px] overflow-hidden">
-      <AnimatePresence mode="wait">
+    <div className="relative w-full h-[855px] overflow-hidden bg-black">
+      <AnimatePresence mode="sync">
         <motion.div
           key={current}
-          initial={{ x: 400, opacity: 0 }}
+          initial={{ x: "100%", opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          exit={{ x: -400, opacity: 0 }}
+          exit={{ x: "-100%", opacity: 0 }}
           transition={{
             duration: 0.8,
-            ease: "easeInOut",
+            ease: [0.22, 1, 0.36, 1],
           }}
-          className="absolute inset-0"
+          className="absolute inset-0 h-full w-full"
         >
           <Image
             src={images[current]}
             alt={`Hero Image ${current + 1}`}
             fill
             sizes="(max-width: 768px) 100vw, 75vw"
-            className="object-cover"
+            className="h-full w-full object-cover"
             priority={current === 0}
           />
         </motion.div>
