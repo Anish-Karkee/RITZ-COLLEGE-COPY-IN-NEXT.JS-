@@ -1,6 +1,5 @@
-import Image from "next/image"
+
 import { Button } from "../ui/button"
-import LAND1 from "../../../public/images/landing1.jpg"
 import Carousel from "./Carousel"
 import Courses from "./Courses"
 
